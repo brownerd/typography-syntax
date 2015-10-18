@@ -1,6 +1,5 @@
 //@import "syntax-variables";
 
-
 // Color Palette
 @purple: hsla(292, 88%, 42%, 1);
 @magenta: hsla(300, 100%, 50%, 1);
@@ -36,16 +35,16 @@
 // General colors
 
 
-// ??? unclear Guide colors
+// XXX unclear Guide colors
 @syntax-wrap-guide-color: @slime;
 @syntax-indent-guide-color: @slime;
 @syntax-invisible-character-color: @slime;
 
-// ??? unclear For find and replace markers
+// XXX unclear For find and replace markers
 @syntax-result-marker-color: @magenta;
 @syntax-result-marker-color-selected: @magenta;
 
-// ??? unclear Gutter colors
+// XXX unclear Gutter colors
 @syntax-gutter-text-color: @magenta;
 @syntax-gutter-text-color-selected: @magenta;
 @syntax-gutter-background-color:@magenta;
@@ -62,7 +61,7 @@
 @default-background-color: @fog;
 @default-active-background-color: @charcoal;
 @default-active-text-color: @fog;
-@default-accent-color: @magenta;
+@accent: @magenta;
 @selection-background: @slime;
 
 
@@ -152,18 +151,18 @@ atom-text-editor, :host {
 
       }
 
-      // ??? unclear
+      // XXX unclear
       &.line-no-selection {
         background-color: darken(@syntax-gutter-background-color-selected, 5%);
         color: @syntax-gutter-text-color-selected;
       }
     }
   }
-  // ??? unclear
+  // XXX unclear
   .wrap-guide {
     color: @syntax-wrap-guide-color;
   }
-  // ??? unclear
+  // XXX unclear
   .indent-guide {
     color: @syntax-indent-guide-color;
   }
@@ -173,12 +172,12 @@ atom-text-editor, :host {
   }
   .search-results {
     .marker {
-      // ??? unclear
+      // XXX unclear
       .region {
         background-color: @trans;
         border: @syntax-result-marker-color;
       }
-      // ??? unclear
+      // XXX unclear
       &.current-result .region {
         border: @syntax-result-marker-color-selected;
       }
@@ -186,7 +185,7 @@ atom-text-editor, :host {
   }
 }
 atom-text-editor.is-focused, :host(.is-focused) {
-  // ??? unclear
+  // XXX unclear
   .cursor {
     border-color: @syntax-cursor-color;
   }
@@ -216,12 +215,12 @@ atom-text-editor.is-focused, :host(.is-focused) {
        color: @markdown-parens;
      }
    }
-   // ??? unclear
+   // XXX unclear
    .markup.strike {
      position: relative;
      color: fade(@default-text-color, 50%);
 
-    // ??? unclear
+    // XXX unclear
      &::after {
        content: "";
        position: absolute;
@@ -232,7 +231,7 @@ atom-text-editor.is-focused, :host(.is-focused) {
        background-color: fade(@default-text-color, 20%);
      }
    }
-   // ??? unclear
+   // XXX unclear
    .table .border {
      color: fade(@default-text-color, 50%);
    }
@@ -245,7 +244,7 @@ atom-text-editor.is-focused, :host(.is-focused) {
    .punctuation.definition.begin, .punctuation.definition.end {
      color: @markdown-brackets;
    }
-   // ??? unclear
+   // XXX unclear
    .punctuation.definition.begin + span:not(.function.parameter) {
      color: lighten(#82b1ff, 5%);
    }
@@ -272,11 +271,11 @@ atom-text-editor.is-focused, :host(.is-focused) {
   color: @parens-quotes;
   font-weight: @ultra;
 }
-// ??? unclear
+// XXX unclear
 .none {
   color: @slime;
 }
-// ??? unclear
+// XXX unclear
 .keyword.operator {
   color: @slime;
 }
@@ -311,7 +310,7 @@ atom-text-editor.is-focused, :host(.is-focused) {
   color: @built-in-objects;
   font-weight: @bold;
 }
-// ??? unclear
+// XXX unclear
 .keyword.other.special-method {
   color: cyan;
 }
@@ -368,7 +367,7 @@ atom-text-editor.is-focused, :host(.is-focused) {
   color: @number;
   font-weight: @light;
 }
-// ??? unclear
+// XXX unclear
 .none {
   color: #F44336;
 }
@@ -394,7 +393,7 @@ atom-text-editor.is-focused, :host(.is-focused) {
 }
 
 
-// ??? unclear
+// XXX unclear
 .constant.rgb-value {
   color: #FD983E;
 }
@@ -411,7 +410,7 @@ atom-text-editor.is-focused, :host(.is-focused) {
   color: @html-attributes-css-class;
   font-weight: @bold;
 }
-// ???  unclear
+// XXX  unclear
 .entity.other.attribute-name.id {
   color: #7E57C2;
 }
@@ -420,11 +419,11 @@ atom-text-editor.is-focused, :host(.is-focused) {
 .meta.selector {
   color: @css-bracket-coma-colon-equal-sign;
 }
-// ??? unclear
+// XXX unclear
 .none {
   color: #F44336;
 }
-// ??? unclear
+// XXX unclear
 .markup.heading .punctuation.definition.heading, .entity.name.section {
   color: rgba(120, 204, 240, 1);
 }
@@ -445,45 +444,45 @@ atom-text-editor.is-focused, :host(.is-focused) {
   font-style: italic;
   color: @mardown-italic;
 }
-// ??? unclear
+// XXX unclear
 .markup.raw.inline {
   color: #f1e655;
 }
 
-// ??? unclear
+// XXX unclear
 .string.other.link, .punctuation.definition.string.end.markdown {
   color: #ff5370;
 }
-// ??? unclear
+// XXX unclear
 .meta.link {
   color: #F44336;
 }
-// ??? unclear
+// XXX unclear
 .markup.list {
   color: rgba(255, 83, 112, 1);
 }
-// ??? unclear
+// XXX unclear
 .markup.quote {
   color: #F44336;
 }
-// ??? unclear
+// XXX unclear
 .meta.separator {
   color: rgba(217, 245, 221, 1);
   background-color: rgba(30, 52, 69, 1);
 }
-// ??? unclear
+// XXX unclear
 .markup.inserted {
   color: #f1e655;
 }
-// ??? unclear
+// XXX unclear
 .markup.deleted {
   color: rgba(255, 83, 112, 1);
 }
-// ??? unclear
+// XXX unclear
 .markup.changed {
   color: #D1C4E9;
 }
-// ???  unclear
+// XXX  unclear
 .constant.other.color, .meta.property-value .support.constant.named-color.css {
   color: #ff993e;
 }
@@ -492,7 +491,7 @@ atom-text-editor.is-focused, :host(.is-focused) {
   color: @regex;
   font-weight: @bold;
 }
-// ??? unclear
+// XXX unclear
 .constant.character.escape {
   color: #80cbc4;
 }
@@ -506,34 +505,34 @@ atom-text-editor.is-focused, :host(.is-focused) {
   color: white;
   background-color: @illegal-error;
 }
-// ??? unclear
+// XXX unclear
 .invalid.broken {
   color: rgba(2, 14, 20, 1);
   background-color: #F44336;
 }
-// ??? unclear
+// XXX unclear
 .invalid.deprecated {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(211, 66, 62, 1);
 }
-// ??? unclear
+// XXX unclear
 .invalid.unimplemented {
   color: rgba(255, 255, 255, 1);
   background-color: #8bd649;
 }
-// ??? unclear
+// XXX unclear
 .markup.deleted.git_gutter {
   color: #ec5f67;
 }
-// ??? unclear
+// XXX unclear
 .markup.changed.git_gutter {
   color: #ffcf1b;
 }
-// ??? unclear
+// XXX unclear
 .markup.inserted.git_gutter {
   color: #91ba61;
 }
-// ??? unclear
+// XXX unclear
 .markup.ignored.git_gutter {
   color: #546e7a;
 }
@@ -542,10 +541,11 @@ atom-text-editor.is-focused, :host(.is-focused) {
 .meta.structure.array .comment.block.json .punctuation.definition.comment {
   color: @comment-marks;
 }
-// ??? unclear
+// XXX unclear
 .text.find-in-files .entity.name.filename.find-in-files {
   color: #ff993e;
 }
+
 // SNTX-CSS property-css
 .support.type.property-name {
   //color: @property-css;
@@ -561,19 +561,32 @@ atom-text-editor.is-focused, :host(.is-focused) {
   color: @units;
   font-weight: @light;
 }
-// ??? unclear
+// XXX unclear
 .entity.other.less.mixin {
   color: #7986cb;
 }
-// ??? unclear
+// XXX unclear
 .constant.other.color.rgb-value .punctuation.definition.constant {
   color: #F44336;
 }
-// ??? unclear
+// XXX unclear
 .meta.attribute-selector .string.unquoted.attribute-value {
   color: #91ba61;
 }
 // SNTX-CSS css-attribute-selector
 .meta.attribute-selector .entity.other.attribute-name.attribute {
   color: @css-attribute-selector;
+}
+
+// SNTX
+.todo,
+.fixme,
+.changed,
+.xxx,
+.idea,
+.hack,
+.note,
+.review {
+  color: @accent;
+  font-weight: @bold;
 }
