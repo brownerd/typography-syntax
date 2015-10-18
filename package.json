@@ -1,0 +1,23 @@
+{
+  "name": "typography-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "An extremely minimal theme that favors typography and limited colors",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/typography-syntax",
+  "author": "Benjamin Gandhi-Shepard <ben@brownerd.com> (http://brownerd.com/)",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "5.8.25",
+    "gulp": "3.9.0",
+    "gulp-notify": "2.2.0",
+    "gulp-size": "2.0.0",
+    "gulp-todo": "4.0.0"
+  }
+}
