@@ -1,7 +1,0 @@
-.DS_Store
-Desktop.ini
-node_modules
-npm-debug.log
-*.orig
-.publish
-*.map
