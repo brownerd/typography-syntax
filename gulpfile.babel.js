@@ -13,9 +13,7 @@ gulp.task('todo', () => {
  gulp.src(path.source)
    .pipe(todo({
      customTags: [
-       'XXX',
        'SNTX-ALL',
-       'SNTX-SPECIAL',
        'SNTX-JS',
        'SNTX-CSS',
        'SNTX-MD',
@@ -24,7 +22,9 @@ gulp.task('todo', () => {
        'SNTX-HTML',
        'SNTX-JADE',
        'SNTX-REGEX',
-       'SNTX-PHP'
+       'SNTX-PHP',
+       'SNTX-SPECIAL',
+       'XXX'
      ]
    }))
    .pipe(gulp.dest(path.sendto))
@@ -35,7 +35,7 @@ gulp.task('size', () => {
   var s = size()
   return gulp.src(path.source)
     .pipe(s)
-    .pipe(gulp.dest(path.sendto))
+    //.pipe(gulp.dest(path.sendto))
     .pipe(notify({
       onLast: true,
       message: function () {

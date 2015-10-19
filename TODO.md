@@ -98,6 +98,7 @@
 | base.less | 549 | property-css
 | base.less | 554 | property-css
 | base.less | 576 | css-attribute-selector
+| base.less | 581 | Stylus
 
 ### SNTX-HTMLs
 | Filename | line # | SNTX-HTML
